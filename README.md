@@ -2,7 +2,7 @@
 
 Embark on an exhilarating journey of web development with the "100 Days, 100 Websites" challenge! Over the course of 100 days, immerse yourself in the world of HTML, CSS, and JavaScript as you craft 100 unique websites from scratch. Each day presents an opportunity to explore new design concepts, master coding techniques, and unleash your creativity.
 
-Live Demo - https://quantumcoding123.github.io/Day-2-Portfolio-Website-Responsive/
+Live Demo - https://quantumcoding123.github.io/Day-4-Portfolio-Website-Awesone/
 
 # Join Us
 
@@ -22,15 +22,18 @@ Join the "100 Days, 100 Websites" challenge today and witness your proficiency i
 
 # Output - 1
 
+![Screenshot (8)](https://github.com/QuantumCoding123/Day-4-Portfolio-Website-Awesone/assets/166281221/3f9eec4c-bd49-4702-b7de-0d04efe007b6)
 
 
 # Output - 2
 
-![Screenshot (7)](https://github.com/QuantumCoding123/Day-2-Portpolio-Website-Responsive/assets/166281221/261c96d8-faef-41fd-9886-e1070566cd87)
+![Screenshot (9)](https://github.com/QuantumCoding123/Day-4-Portfolio-Website-Awesone/assets/166281221/254b02b1-bfa0-4b0b-a192-3d83ccdeca07)
+
 
 # Output - 3
 
-![Screenshot (9)](https://github.com/QuantumCoding123/Day-2-Portpolio-Website-Responsive/assets/166281221/dfba3034-1f1a-4b6b-9278-92cb629ff1b9)
+![Screenshot (10)](https://github.com/QuantumCoding123/Day-4-Portfolio-Website-Awesone/assets/166281221/ac0cd25f-cebf-44c2-9b3a-07a9b9422b96)
+
 
 
 
