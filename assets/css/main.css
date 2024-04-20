@@ -1,0 +1,938 @@
+/***************************************
+========================================
+
+	Author Name   : Themeplaza
+	This is HTML5 template
+	Template Name : Mariya Personal Portfolio Template
+	Version: 1.0
+	
+****************************************
+=======================================/
+
+
+/* ----------------------------------------------------------------
+
+ ==> Table Of Content
+
+	01. Default
+	02. Header
+	03. Banner
+	04. About
+	05. Service
+	06. Portfolio 
+	07. Resume
+	08. Testimonial
+	09. Blog
+	10. Contact
+	11. Footer
+ 
+
+---------------------------------------------------------------- */
+/* ==========================================================================
+01. Start Default CSS Area
+========================================================================== */
+html{
+	overflow-x: hidden;
+}
+body{
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	color: #777;
+	line-height: 25px;
+	overflow-x: hidden;
+}
+.script-font{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+.fw_300{
+	font-weight: 300;
+}
+.fw_600{
+	font-weight: 600;
+}
+a{
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+a:hover{
+	text-decoration: none;
+}
+a a:focus{
+	outline: none;
+}
+img{
+    max-width: 100%;
+}
+p{
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	margin: 0px;
+	font-size: 14px;
+	color: #e3eaef;
+}
+ul, ol{
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+ul li, ol li{
+	list-style: none;
+}
+.gray_bg{
+	background: #0a0a0a;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+	background: #3a3973;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;	
+}
+.spinner{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 10px;
+	text-indent: -12345px;
+	z-index: 10000;
+}
+.double-bounce1, .double-bounce2{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fe4f6c;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2{
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+@-webkit-keyframes sk-bounce{
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bounce{
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/* END PRELOADER DESIGN*/
+
+.hero-heading{
+	font-size: 48px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: capitalize;
+	line-height: 70px;
+	letter-spacing: 0.1rem;
+}
+.hero-sub-heading{
+	font-size: 20px;
+	font-weight: 400;
+	color: #e6e6e6;
+	line-height: 45px;
+	letter-spacing: 0.1rem;
+}
+.section-titile-bg{
+	display: inline;
+	font-size: 115px;
+	font-weight: 700;
+	height: 100%;
+	left: -173px;
+	opacity: 0.1;
+	position: absolute;
+	top: -14px;
+	width: 100%;
+	text-align: center;
+}
+.section-title-header p{
+	text-align: center;
+	font-weight: 400;
+	line-height: 26px;
+	padding-bottom: 36px;
+}
+.section-title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 600;
+	position: relative;
+    z-index: 1;
+}
+.section-title span{
+	color: #fe4f6c;
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    display: inline-block;
+}
+.btn:focus,
+.btn:active{
+	box-shadow: none;
+	outline: none;
+	color: #fff;
+}
+.btn-common{
+	font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    display: inline-block;
+	background-color: #fe4f6c;
+	position: relative;
+	z-index: 1;
+}
+button:focus{
+	outline: none !important;
+}
+.btn.btn-secondary{
+    background: #fe4f6c;
+    border-color: #fe4f6c;
+    color: #fff;
+}
+.btn.btn-secondary:hover{
+    box-shadow: 1px 5px 12px rgba(0,0,0, 0.15);
+}
+.btn-secondary.banner_btn{
+    background: #fe4f6c;
+    border-color: #fe4f6c;
+	color: #fff;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.btn.btn-secondary.ct_btn{
+    width: 100%;
+}
+/* ScrollToTop */
+
+a.back-to-top{
+	display: none;
+	position: fixed;
+	bottom: 18px;
+	right: 15px;
+	text-decoration: none;
+}
+a.back-to-top i{
+	display: block;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background: #fe4f6c;
+	border-radius: 20px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+a.back-to-top:hover, a.back-to-top:focus{
+	text-decoration: none;
+}
+#loader{
+	position: fixed;
+	background: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+}
+.square-spin{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+.square-spin img{
+	max-width: 64px;
+}
+/* Section-padding */
+.section-padding {
+    padding: 80px 0;
+}
+/* ==========================================================================
+01. End Default CSS Area
+========================================================================== */
+
+
+/* ==========================================================================
+02. Start Header Area
+========================================================================== */
+.navbar{
+    padding: 15px 0;
+}
+.navbar-brand p{
+    font-size: 30px;
+	text-transform: capitalize;
+    color: #fe4f6c;
+    font-weight: 600;
+}
+.bg-faded{
+	background-color: transparent;
+	transition: all 0.3s ease 0s;
+}
+@media only screen and (max-width:768px){ 
+	.bg-faded {
+		background: #fff;
+		animation: fadeInDown 1s both 0.2s;
+	}
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px;
+}
+@media only screen and (max-width:768px){ 
+.navbar-light .navbar-nav .nav-link {color: #333;}
+}
+@media only screen and (max-width:480px) { 
+.navbar-light .navbar-nav .nav-link {padding: 8px 0px;}
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #fe4f6c !important;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .open > .nav-link{
+	color: #fe4f6c  !important;
+}
+.navbar-light .navbar-toggler{
+	border-color: #fff;
+	border-radius: 0px;
+}
+.navbar-light .navbar-toggler{
+	float: right;
+	margin: 14px;
+	cursor: pointer;
+    background-color: #fe4f6c;
+	border-color: #fe4f6c;
+	border-radius: 0;
+}
+.navbar-light .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 32 32\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(0, 0, 0, 0.5)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 8h24M4 16h24M4 24h24\'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler i{
+	color: #333!important;
+}
+.site-navigation{
+    border-radius: 0px;
+}
+@media only screen and (max-width:480px){ 
+	.collapse.show{
+		display: block;
+		padding: 0!important;
+	}
+}
+.navbar-fixed{
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+	padding:20px 0;
+    top: 0;
+    -webkit-animation: fadeInDown 800ms;
+    animation: fadeInDown 800ms;
+    -webkit-backface-visibility: hidden;
+    border-radius: 0px;
+    background:#000000;
+	box-shadow:0 10px 40px rgba(0, 0, 0, 0.05);
+}
+@media only screen and (max-width:768px){ 
+	.navbar-fixed {background:#fff;}
+	.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#333;}
+}
+.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#fff;}
+@media only screen and (max-width:768px){ 
+.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#333;}
+}
+/* ==========================================================================
+02. End Header Area
+========================================================================== */
+
+
+/* ==========================================================================
+03. Start Banner Area
+========================================================================== */
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top: 0;
+}
+.banner_content{
+	margin-top: 200px;
+}
+.banner_content strong{
+    font-size: 30px;
+	color: #fff;
+}
+.banner_content h1{
+    color: #fff;
+    font-size: 50px;
+    margin: 5px 0 10px;
+}
+.banner_content h3{
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 25px;
+}
+.banner_content h1 span .fw_600{
+	font-weight: 600;
+}
+.cd-headline.clip .cd-words-wrapper::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+.banner_content p{
+    color: #fff;
+	font-size: 14px;
+    padding-bottom: 0;
+    max-width: 100%;
+}
+.banner-images img{
+	margin-top: 60px;
+}
+/* ==========================================================================
+03. End Banner Area
+========================================================================== */
+
+
+/* ==========================================================================
+04. Start About Area
+========================================================================== */
+.about-content{
+	margin-top: 15px;
+}
+.about-image img{
+    border-radius: 0px;
+	border: 5px solid #fe4f6c;
+    margin-top: 25px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.about-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.about-content h3 span{
+	color: #fe4f6c;
+}
+.profile-wrapper{
+	padding: 45px 0;
+}
+.profile-wrapper .btn{
+	margin: 10px 10px 0px 0px;
+}
+.profile-wrapper .btn i{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.about-profile{
+	position: relative;
+	margin: 20px 0 20px 0;
+}
+.about-profile .pro-title{
+    font-weight: 600;
+    position: relative;
+    width: 128px;
+    display: inline-block;
+    margin-bottom: 10px;
+	color: #fff;
+}
+.about-profile .pro-title:after{
+    position: absolute;
+    content: ':';
+    color: #fff;
+    font-size: 14px;
+    left: 88px;
+}
+.about-profile .admin-sign{
+	position: absolute;
+	right: 45px;
+	bottom: 10px;
+}
+.about-profile .pro-detail{
+	color: #e3eaef;
+}
+/* ==========================================================================
+05. Start Service Area
+========================================================================== */
+.services-item{
+    background: transparent;
+    border-radius: 5px;
+	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+    padding: 50px 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.services-item .icon{
+    background: url(../img/service/service-icon-bg.svg) no-repeat;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+}
+.services-item .services-content h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.services-item .services-content h3 a{
+	font-size: 18px;
+	color: #fff;
+}
+.services-item:hover .services-content h3 a{
+	color: #fe4f6c;
+}
+.services-item .services-content p{
+	line-height: 22px;
+}
+/* ==========================================================================
+05. End Service Area
+========================================================================== */
+
+
+/* ==========================================================================
+06. Start Portfolio Area
+========================================================================== */
+#portfolio .mix{
+	padding: 10px;
+}
+#portfolio .portfolio-item .shot-item{
+	margin: 0px;
+}
+#portfolio .mix{
+	display: none;
+}
+.controls{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.controls .active{
+	color: #fe4f6c !important;
+	border-color: #fe4f6c;
+	background: transparent;
+}
+.controls .btn{
+	text-transform: uppercase;
+	margin: 2px;
+	color: #fff;
+}
+.controls:hover{
+	cursor: pointer;
+}
+.portfolio-img{
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.portfolio-img img{
+	width: 100%;
+}
+.shot-item{
+	margin-right: 15px;
+	border-radius: 4px;
+	background: #fff;
+	position: relative;
+}
+.shot-item img{
+	width: 100%;
+}
+.shot-item .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.shot-item:hover .overlay{
+	opacity: 1;
+}
+.overlay{
+	opacity: 0;
+}
+.overlay .icons i{
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	color: #fe4f6c;
+	left: 50%;
+	margin-left: -24px;
+	margin-top: -24px;
+	top: 50%;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	background: #fff;
+	border-radius: 25px;
+}
+.overlay .preview{
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	color: #fff;
+}
+.overlay .link {
+	position: absolute;
+	left: 60%;
+	top: 50%;
+	color: #fff;
+}
+.shot-item:hover .overlay {
+	opacity: 1;
+}
+a:not([href]):not([tabindex]){
+	color: #fff;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+	color: #fff;
+}
+/* ==========================================================================
+06. End Portfolio Area
+========================================================================== */
+
+
+/*================================================
+FunFacts CSS
+=================================================*/
+.funfact {
+	position: relative;
+	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+	z-index: 1;
+	text-align: center;
+	background: #3a3973;
+	padding: 20px 10px;
+}
+.funfact i{
+	font-size: 85px;
+	color: #e6e2e1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	opacity: .55;
+	margin: 0 auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.funfact h3{
+    margin-bottom: -4px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 38px;
+}
+.funfact h3 .odometer{
+	position: relative;
+	top: -4px;
+}
+.funfact p{
+    color: #fe4f6c;
+    margin-top: 5px;
+}
+/* ==========================================================================
+04. End About Area
+========================================================================== */
+
+
+/* ==========================================================================
+07. Start Resume Area
+========================================================================== */
+#resume .block-title h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.timeline{
+    border-left: 1px solid #fe4f6c;
+    padding: 15px 0;
+}
+.timeline-item{
+    position: relative;
+    padding: 15px 20px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #f6f7fe;
+    border-left: 2px solid #fe4f6c;
+    transition: 0.3s ease-in-out;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 12px;
+	height: 12px;
+	top: 20px;
+	left: -29px;
+	border: 2px solid #fe4f6c;
+	z-index: 2;
+}
+.timeline-item:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	background-color: #fe4f6c;
+	border-radius: 10px;
+	width: 29px;
+	height: 2px;
+	top: 25px;
+	left: -29px;
+	z-index: 1;
+}
+.timeline-item .item-title{
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #fff;
+}
+.timeline-item .item-period{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.2em;
+	color: #fe4f6c;
+	margin-bottom: 8px;
+}
+.timeline-item .item-small{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.2em;
+	color: #fff;
+	margin-left: 5px;
+	margin-bottom: 8px;
+	padding-left: 8px;
+	border-left: 1px solid #e0e0e0;
+}
+/* ==========================================================================
+07. End Resume Area
+========================================================================== */    
+
+
+/* ==========================================================================
+08. Start Testimonial Area
+========================================================================== */
+.testimonial .qote i{
+    font-size: 30px;
+    margin: 15px 0;
+    color: #fe4f6c;
+}
+.testimonial .pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    top: -60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .description{
+    text-align: center;
+    font-weight: 500;
+    padding: 20px 150px;
+    position: relative;
+    font-style: italic;
+}
+.testimonial .name{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+.testimonial .position{
+	color: #fe4f6c;
+}
+/* ==========================================================================
+08. End Testimony Area
+========================================================================== */
+
+
+/* ==========================================================================
+09. Start Blog Area
+========================================================================== */
+@media only screen and (max-width:480px) { 
+.single_blog {margin-bottom:30px;}
+}
+.single_blog{
+	margin-bottom: 30px;
+}
+.blog-thumb{
+	background: transparent;
+	-webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.blog-thumb small {
+	color: #fe4f6c;
+	font-weight: 500;
+	display: block;
+}
+.blog-thumb small .fa {
+	margin-right: 5px;
+}
+.blog-thumb small,
+.blog-thumb small + span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.blog-thumb small + span{
+	color: #e3eaef;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 2px;
+}
+.blog-thumb h4 {
+	color: #fff;
+    padding: 8px 0 12px;
+    font-size: 22px;
+    margin: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.blog-thumb h4:hover{
+	color: #fe4f6c;
+}
+#blog-detail h2 {
+	padding: 25px 0 10px 0;
+}
+.blog-info {
+	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+	padding: 18px 30px;
+}
+.blog-info .blog_btn{
+	margin: 20px 0px 0px 0px;
+}
+/* ==========================================================================
+09. End Blog Area
+========================================================================== */
+
+
+/* ==========================================================================
+10. Start Contact Area
+========================================================================== */
+.form .form-group input{
+	background: transparent;
+	border-color: #e3e3e3;
+    height: 40px;
+    border-radius: 0;
+	box-shadow: none;
+}
+.form .form-group input:focus{
+	border-color: #ff4a57;
+	color: #fff;
+}
+.form .form-group textarea{
+	background: transparent;
+	border-color: #e3e3e3;
+	margin-top: 10px;
+	padding-bottom: 5%;
+    border-radius: 0;
+	box-shadow: none;
+}
+.gray_bg .form .form-group textarea:focus{
+	border-color: #ff4a57;
+	color: #fff;
+}
+#submitButton{
+	margin-top: 10px;
+}
+/* ==========================================================================
+10. End Contact Area
+========================================================================== */
+
+
+/* ==========================================================================
+11. Start Footer Area
+========================================================================== */
+.footer-area{
+	padding: 30px 0 20px;
+    background: #000000;
+}
+.footer-area .footer-text p{
+	font-size: 14px;
+	color: #fff;
+}
+/* ==========================================================================
+11. End Footer Area
+========================================================================== */
